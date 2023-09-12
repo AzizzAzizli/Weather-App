@@ -4,3 +4,28 @@ nav a{
 nav a:hover{
     color: black;
 }
+main{
+    background-image: linear-gradient(#3498db, #1abc9c)
+}
+section{
+    background-color: rgba(0, 0, 0, 0.150);
+}
+input{
+    border: none;
+    background-color: transparent;
+    border-bottom: 1px solid rgb(173, 151, 24);
+    outline: none;
+color :white;
+font-size: 20px;
+font-weight: 600;
+
+
+}
+input::placeholder{
+    color: white;
+    font-size: medium;
+}
+.content{
+    background: #ffffff61;
+
+}
