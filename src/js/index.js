@@ -1,15 +1,14 @@
-window.onload = async function () {
-    try{
-        await getData("Baku")
-        render()
-    }catch(err){
-        // console.log(err);
-    }
- 
-  };
-
 $(document).ready(function() {
 
+    window.onload = async function () {
+        try{
+            await getData("Baku")
+            render()
+        }catch(err){
+            // console.log(err);
+        }
+     
+      };
 
 
 
