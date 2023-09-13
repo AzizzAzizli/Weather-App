@@ -85,7 +85,7 @@ function render(weather){
  const {weather:[{main}],main:{temp,humidity},wind:{speed} ,sys:{country},name } = weather
 // console.log(main,description,temp,speed,country,name);
 $(".aboutWeather").html(`  <p class=" ">${main}</p>
-<p class="">${temp} C°</p>
+<p class="">${Math.round(temp)} C°</p>
   <p class="">${name}/${country}</p>
 
  <div class="d-flex justify-content-between"> 
