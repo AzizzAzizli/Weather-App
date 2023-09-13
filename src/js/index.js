@@ -1,5 +1,3 @@
-$(document).ready(function() {
-
 window.onload = async function () {
     try{
         await getData("Baku")
@@ -9,6 +7,10 @@ window.onload = async function () {
     }
  
   };
+
+$(document).ready(function() {
+
+
 
 
     $("input").on("keydown",  function(e){
