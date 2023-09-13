@@ -5,10 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./src/style/reset.css">
 <link rel="stylesheet" href="./src/style/bootstrap-min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="./src/style/style.css">
     <title>Document</title>
 </head>
-<body>
+<body class="w-100" style="height: 100vh;">
     <header style="height: 60px;" class=" position-sticky top-0 z-2 d-flex w-100 text-light bg-success align-items-center justify-content-between">
         <h1 class="fs-5 fw-medium  ps-3">Weather App</h1>
         <nav class="d-flex align-items-center">
@@ -20,33 +21,22 @@
         </nav>
 
       </header>
-<main style="height: 100vh;" class="w-100  ">
-<section class="w-100 h-100  d-flex flex-column align-items-center">
-  <div class=" row w-100 container d-flex justify-content-md-between flex-md-row flex-column">
 
-  <div class=" col-md-4 col-md-3 col-9 mt-5 pt-5 align-self-center d-flex gap-3 " > 
-    <input type="search" spellcheck="true" class=" p-2"  oninput="convertToUpperCase()"  placeholder="Search..." > <button class="btn btn-outline-warning btn-sm  mt-3">Search</button>
-  </div>
-<div class="content mt-sm-4 mt-5 pt-3 pb-3 text-center col-md-3 d-none col-9 rounded-3 align-self-center">
-<!-- <p class="h1 fw-bold">Baku/AZ</p>
-<p class="h1 fw-medium">18 C°</p>
-<p class="h2 ">Rain</p>
-<p class="h5">loremmm</p>
-<p class="h4 ">5 m/s</p> -->
+<main style="height: 80vh;" class="w-100  d-flex justify-content-center align-items-center">
+  <div class="container-sm row  justify-content-center align-items-center">
+    <div class=" content rounded-3  col-sm-10 col-md-8 col-lg-6 col-xl-5 col-12 bg-black  p-4" >
 
+<div class="d-flex justify-content-between mb-3">
+  <input class="rounded-5 w-75 p-2 fs-5 fw-medium text-secondary" placeholder="Search..." type="search">  
+<img class="p-3 bg-light rounded-circle " src="./src/icon/icon.svg" alt="search-icon">
 </div>
-
-
+<div class="aboutWeather  text-center text-light pt-4 pb-4">
+</div>
+<p id="errorMessage" style="display: none;" class="fs-1 fw-medium  text-center">Invalid entry</p>
+    </div>
   </div>
 
-
-</section>
 </main>
-
-
-
-
-
     <script src="./src/js/jquery-3-7-1-min.js"></script>
     <script src="./src/js/index.js"></script>
 </body>
